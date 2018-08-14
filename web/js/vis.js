@@ -187,7 +187,7 @@ function refresh_graph() {
         url: '/api/get-graph',
         data: {
             c_name: $('#c_name').val(),
-            keyword: $('#rel').val(),
+            keyword: $('select#rel').children(":selected").val(),
         },
         success: function (data) {
             if (data['code'] === 200) {
@@ -207,6 +207,6 @@ function refresh_graph() {
 
 refresh_graph();
 
-$("a#refresh").bind('click', function () {
+$("select#rel").bind('change', function () {
     refresh_graph();
 });

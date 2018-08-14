@@ -54,11 +54,13 @@ class SiteController extends Controller
                 return $this->redirect('https://www.google.com.sg/search?q=' . $c_name);
             }
             $articles = Cluster::getCluster($c_name, $t_name, $day);
+            $rel = Graph::getRel($c_name, "");
             return $this->render('result', [
                 'c_name' => $c_name,
                 't_name' => $t_name,
                 'day' => $day,
                 'articles' => $articles,
+                'rel' => $rel
             ]);
         } catch (\Exception $e) {
             $types = Type::getAllTypes();

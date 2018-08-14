@@ -6,6 +6,7 @@
  * @var $c_name
  * @var $t_name
  * @var $day
+ * @var $rel
  */
 
 
@@ -14,8 +15,6 @@ use app\assets\AppAsset;
 
 AppAsset::addScript($this, "http://d3js.org/d3.v3.min.js");
 AppAsset::addScript($this, "/js/vis.js");
-AppAsset::addScript($this, '/js/jquery-ui.js');
-AppAsset::addScript($this, '/js/search_rel.js');
 AppAsset::addCss($this, "/css/vis.css");
 AppAsset::register($this);
 
@@ -25,7 +24,6 @@ $this->params['breadcrumbs'][] = $this->title;
 
 ?>
 
-<link rel="stylesheet" href="/css/jquery-ui.css">
 <!-- scrollToTop -->
 <!-- ================ -->
 <div class="scrollToTop circle"><i class="icon-up-open-big"></i></div>
@@ -135,13 +133,14 @@ $this->params['breadcrumbs'][] = $this->title;
                             <input type="hidden" id='t_name' value="<?= $t_name ?>">
                             <input type="hidden" id='day' value="<?= $day ?>">
                             <div style="margin-bottom: 10px">
-                                <input id="rel" type="text" name='c_name' required class="form-control"
-                                       style="display: inline;width:unset;"
-                                       placeholder="Relation">
-                                <ul class="social-links circle animated-effect-1" style="display: inline;">
-                                    <li class="facebook"><a href="#" id="refresh" ><i
-                                                    class="fa fa-refresh"></i></a></li>
-                                </ul>
+                                <select class="form-control" id='rel' required>
+                                    <option value="">All Relation</option>
+                                    <?php
+                                    foreach ($rel as $item){
+                                        echo "<option value='{$item}'>{$item}</option>";
+                                    }
+                                    ?>
+                                </select>
                             </div>
                             <div id="svg-body" style="width:350px; height: 566px"></div>
                         </div>
