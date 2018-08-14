@@ -111,23 +111,40 @@ $this->params['breadcrumbs'][] = $this->title;
 <div id="comments" class="comments">
     <h2 class="title"># {$key}</h2>
 EOF;
+                        $is_first = true;
                         foreach ($cluster as $article) {
-                            $r_time = date('H:i', rand(0, 3600*24));
-                            echo <<<EOF
+                            $r_time = date('H:i', rand(0, 3600 * 24));
+                            if ($is_first) {
+                                $content = substr($article['n_des'], 0, 200) . " ...";
+                                echo <<<EOF
 <!-- comment start -->
 <div class="comment clearfix">
     <header>
         <a href="/site/text?n_id={$article['n_id']}"><h3>{$article['n_title']}</h3></a>
         <div class="comment-meta">By <a href="#">admin</a> | Today, {$r_time}</div>
-        <p>{$article['n_des']}</p>
+        <p>{$content}</p>
     </header>
-</div>
-<br/>
 <!-- comment end -->
 EOF;
+                                if(count($cluster)>1){
+                                    echo "<br/>";
+                                }
+                                $is_first = false;
+                            } else {
+                                echo <<<EOF
+<!-- comment start -->
+<div class="comment clearfix">
+    <header>
+        <a href="/site/text?n_id={$article['n_id']}"><h3>{$article['n_title']}</h3></a>
+        <div class="comment-meta">By <a href="#">admin</a> | Today, {$r_time}</div>
+    </header>
+<!-- comment end -->
+</div>
+EOF;
+                            }
 
                         }
-                        echo "</div>";
+                        echo "</div></div>";
                     }
                     ?>
 
