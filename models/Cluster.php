@@ -59,7 +59,8 @@ class Cluster extends \yii\db\ActiveRecord
 select
   a.`group`,
   c.n_title,
-  c.n_id
+  c.n_id,
+  c.n_des
 from cluster a 
   left join company b on a.c_id = b.c_id
   left join news c on a.n_id = c.n_id

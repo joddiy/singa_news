@@ -107,18 +107,29 @@ $this->params['breadcrumbs'][] = $this->title;
                     <div class="separator-2"></div>
                     <?php
                     foreach ($articles as $key => $cluster) {
-                        echo "<h4>#{$key} </h4>";
+                        echo <<<EOF
+<div id="comments" class="comments">
+    <h2 class="title"># {$key}</h2>
+EOF;
                         foreach ($cluster as $article) {
-                            echo "<row style='display: block'>";
-                            echo "<a href=\"/site/text?n_id={$article['n_id']}\">";
-                            echo "<blockquote class=\"margin-clear\" style='padding-bottom: 0'>";
-                            echo "<p>{$article['n_title']}</p>";
-                            echo "</blockquote>";
-                            echo "</a>";
-                            echo "</row>";
+                            $r_time = date('H:i', rand(0, 3600*24));
+                            echo <<<EOF
+<!-- comment start -->
+<div class="comment clearfix">
+    <header>
+        <a href="/site/text?n_id={$article['n_id']}"><h3>{$article['n_title']}</h3></a>
+        <div class="comment-meta">By <a href="#">admin</a> | Today, {$r_time}</div>
+        <p>{$article['n_des']}</p>
+    </header>
+</div>
+<!-- comment end -->
+EOF;
+
                         }
+                        echo "</div>";
                     }
                     ?>
+
                 </div>
                 <!-- main end -->
 
@@ -136,7 +147,7 @@ $this->params['breadcrumbs'][] = $this->title;
                                 <select class="form-control" id='rel' required>
                                     <option value="">All Relation</option>
                                     <?php
-                                    foreach ($rel as $item){
+                                    foreach ($rel as $item) {
                                         echo "<option value='{$item}'>{$item}</option>";
                                     }
                                     ?>
