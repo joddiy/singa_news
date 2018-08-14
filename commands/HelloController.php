@@ -35,13 +35,18 @@ class HelloController extends Controller
             if ($handle) {
                 $j = 1;
                 $str = "";
+                $is_first = true;
                 while (($line = fgets($handle)) !== false) {
+                    if ($is_first) {
+                        $is_first = !$is_first;
+                        continue;
+                    }
                     $str .= " " . $line;
                     $j += 1;
-                    if ($j > 10) {
+                    if ($j > 5) {
                         $sql = "update news set n_des = :des where n_id = :id";
                         \Yii::$app->getDb()->createCommand($sql, [
-                            ":des" => substr($str, 0, 255),
+                            ":des" => substr($str, 1, 500),
                             ":id" => $i,
                         ])->execute();
                         break;
