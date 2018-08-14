@@ -122,6 +122,7 @@ EOF;
         <p>{$article['n_des']}</p>
     </header>
 </div>
+<br/>
 <!-- comment end -->
 EOF;
 
