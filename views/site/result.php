@@ -53,7 +53,7 @@ $this->params['breadcrumbs'][] = $this->title;
                             <!-- logo -->
                             <div id="logo" class="logo d-flex justify-content-center justify-content-md-start">
                                 <h3 class="margin-clear"><a href="/" class="logo-font link-light"><span
-                                                class="text-default">SINGA</span></a></h3>
+                                                class="text-default">DBS</span></a></h3>
                             </div>
 
                             <!-- name-and-slogan -->
