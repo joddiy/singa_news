@@ -121,7 +121,7 @@ EOF;
 <!-- comment start -->
 <div class="comment clearfix">
     <header>
-        <a href="/site/text?n_id={$article['n_id']}"><h3>{$article['n_title']}</h3></a>
+        <a href="/site/text?n_id={$article['n_id']}"><h4>{$article['n_title']}</h4></a>
         <div class="comment-meta">By <a href="#">admin</a> | Today, {$r_time}</div>
         <p>{$content}</p>
     </header>
@@ -137,7 +137,7 @@ EOF;
 <div class="comment clearfix"style="
     margin-bottom:  20px;">
     <header>
-        <a href="/site/text?n_id={$article['n_id']}"><h3>{$article['n_title']}</h3></a>
+        <a href="/site/text?n_id={$article['n_id']}"><h4>{$article['n_title']}</h4></a>
         <div class="comment-meta">By <a href="#">admin</a> | Today, {$r_time}</div>
     </header>
 <!-- comment end -->
