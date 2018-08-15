@@ -41,13 +41,12 @@ $this->params['breadcrumbs'][] = $this->title;
                         <div class="header-first clearfix">
 
                             <!-- logo -->
-                            <div id="logo" class="logo d-flex justify-content-center justify-content-md-start">
-                                <h3 class="margin-clear"><a href="/" class="logo-font link-light"><span
-                                                class="text-default">DBS</span></a></h3>
+                            <div id="logo" class="logo">
+                                <a href="/"><img src="/img/DBS_Bank.svg" style="height: 35px; width: 150px" alt="The Project"></a>
                             </div>
 
                             <!-- name-and-slogan -->
-                            <div class="site-slogan text-center-xs">
+                            <div style="padding-left: 20px" class="site-slogan text-center-xs">
                                 News Article Clustering
                             </div>
 

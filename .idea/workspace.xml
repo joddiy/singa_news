@@ -2,8 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f8ce1fe5-1ec4-4b1a-b7ea-acaad191a026" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/web/img/DBS logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/img/DBS_Bank.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/img/logo-dbs-png-dbs-bank-logo-logotype-4519.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/site/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/site/index.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/views/site/result.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/site/result.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/site/text.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/site/text.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/js/vis.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/js/vis.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -38,11 +44,15 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="index.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/views/site/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="399">
-              <caret line="53" column="58" selection-start-line="53" selection-start-column="58" selection-end-line="53" selection-end-column="58" />
+            <state relative-caret-position="405">
+              <caret line="49" column="35" lean-forward="true" selection-start-line="49" selection-start-column="35" selection-end-line="49" selection-end-column="35" />
+              <folding>
+                <element signature="n#style#0;n#a#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#1;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#img#0;n#a#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#1;n#!!top" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -65,11 +75,15 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="result.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="result.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/views/site/result.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="494">
-              <caret line="130" selection-start-line="130" selection-end-line="130" />
+            <state relative-caret-position="428">
+              <caret line="52" column="26" selection-start-line="52" selection-start-column="26" selection-end-line="55" selection-end-column="34" />
+              <folding>
+                <element signature="n#style#0;n#img#0;n#a#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#header#0;n#div#0;n#div#1;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#header#0;n#div#0;n#div#1;n#!!top" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -77,20 +91,8 @@
       <file leaf-file-name="blog-post.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/project/blog-post.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="728">
-              <caret line="891" column="38" lean-forward="true" selection-start-line="875" selection-start-column="17" selection-end-line="891" selection-end-column="38" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Cluster.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/models/Cluster.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="414">
-              <caret line="24" column="30" selection-start-line="24" selection-start-column="30" selection-end-line="24" selection-end-column="30" />
-              <folding>
-                <element signature="e#30#38#0#PHP" expanded="true" />
-              </folding>
+            <state relative-caret-position="260">
+              <caret line="190" selection-start-line="190" selection-end-line="193" selection-end-column="24" />
             </state>
           </provider>
         </entry>
@@ -98,17 +100,21 @@
       <file leaf-file-name="text.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/views/site/text.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1944">
-              <caret line="108" column="41" selection-start-line="105" selection-start-column="38" selection-end-line="108" selection-end-column="41" />
+            <state relative-caret-position="414">
+              <caret line="44" column="130" selection-start-line="44" selection-start-column="31" selection-end-line="44" selection-end-column="130" />
+              <folding>
+                <element signature="n#style#0;n#img#0;n#a#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#header#0;n#div#0;n#div#1;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#header#0;n#div#0;n#div#1;n#!!top" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="params.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/config/params.php">
+      <file leaf-file-name="vis.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/js/vis.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="72">
-              <caret line="4" column="13" selection-start-line="4" selection-start-column="5" selection-end-line="4" selection-end-column="13" />
+            <state relative-caret-position="942">
+              <caret line="172" column="32" selection-start-line="172" selection-start-column="32" selection-end-line="172" selection-end-column="32" />
             </state>
           </provider>
         </entry>
@@ -139,6 +145,7 @@
       <find>Great! you have just created this message :-) you can configure this into the template.js file</find>
       <find>announcement bg-danger text-white</find>
       <find>Comment title</find>
+      <find>project</find>
     </findStrings>
     <replaceStrings>
       <replace />
@@ -162,7 +169,6 @@
         <option value="$PROJECT_DIR$/models/Type.php" />
         <option value="$PROJECT_DIR$/views/layouts/main.php" />
         <option value="$PROJECT_DIR$/web/js/search_autocomplete.js" />
-        <option value="$PROJECT_DIR$/views/site/text.php" />
         <option value="$PROJECT_DIR$/web/css/vis.css" />
         <option value="$PROJECT_DIR$/models/Company.php" />
         <option value="$PROJECT_DIR$/config/params.php" />
@@ -172,12 +178,13 @@
         <option value="$PROJECT_DIR$/controllers/ApiController.php" />
         <option value="$PROJECT_DIR$/config/.gitignore" />
         <option value="$PROJECT_DIR$/controllers/SiteController.php" />
-        <option value="$PROJECT_DIR$/web/js/vis.js" />
         <option value="$PROJECT_DIR$/models/Cluster.php" />
         <option value="$PROJECT_DIR$/config/db.php" />
         <option value="$PROJECT_DIR$/commands/HelloController.php" />
-        <option value="$PROJECT_DIR$/views/site/index.php" />
+        <option value="$PROJECT_DIR$/web/js/vis.js" />
         <option value="$PROJECT_DIR$/views/site/result.php" />
+        <option value="$PROJECT_DIR$/views/site/text.php" />
+        <option value="$PROJECT_DIR$/views/site/index.php" />
       </list>
     </option>
   </component>
@@ -364,15 +371,15 @@
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/web/" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/web/img" />
       <recent name="$PROJECT_DIR$/views/site" />
       <recent name="$PROJECT_DIR$/web/css" />
       <recent name="$PROJECT_DIR$/web/js" />
       <recent name="$PROJECT_DIR$/controllers" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/web/" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -400,7 +407,7 @@
       <workItem from="1533881725596" duration="3287000" />
       <workItem from="1533892290607" duration="40745000" />
       <workItem from="1534236280631" duration="1160000" />
-      <workItem from="1534254126622" duration="930000" />
+      <workItem from="1534254126622" duration="3032000" />
     </task>
     <task id="LOCAL-00001" summary="commit">
       <created>1534214761145</created>
@@ -430,11 +437,25 @@
       <option name="project" value="LOCAL" />
       <updated>1534254193129</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="commit">
+      <created>1534255097728</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1534255097728</updated>
+    </task>
+    <task id="LOCAL-00006" summary="commit">
+      <created>1534304558840</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1534304558840</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="46122000" />
+    <option name="totallyTimeSpent" value="48224000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1680" height="1027" extended-state="6" />
@@ -472,10 +493,6 @@
     <option name="LAST_COMMIT_MESSAGE" value="commit" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/web/css/images/ui-icons_444444_256x240.png" />
-    <entry file="file://$PROJECT_DIR$/web/robots.txt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/widgets/Alert.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="443">
@@ -659,13 +676,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/js/vis.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="392">
-          <caret line="191" column="34" selection-start-line="191" selection-start-column="34" selection-end-line="191" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/controllers/SiteController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="335">
@@ -725,13 +735,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/views/site/text.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1944">
-          <caret line="108" column="41" selection-start-line="105" selection-start-column="38" selection-end-line="108" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/commands/HelloController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="594">
@@ -753,24 +756,56 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/views/site/index.php">
+    <entry file="file://$PROJECT_DIR$/web/js/vis.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="399">
-          <caret line="53" column="58" selection-start-line="53" selection-start-column="58" selection-end-line="53" selection-end-column="58" />
+        <state relative-caret-position="942">
+          <caret line="172" column="32" selection-start-line="172" selection-start-column="32" selection-end-line="172" selection-end-column="32" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/web/project/blog-post.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="728">
-          <caret line="891" column="38" lean-forward="true" selection-start-line="875" selection-start-column="17" selection-end-line="891" selection-end-column="38" />
+        <state relative-caret-position="260">
+          <caret line="190" selection-start-line="190" selection-end-line="193" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/img/DBS_Bank.svg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/site/text.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="414">
+          <caret line="44" column="130" selection-start-line="44" selection-start-column="31" selection-end-line="44" selection-end-column="130" />
+          <folding>
+            <element signature="n#style#0;n#img#0;n#a#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#header#0;n#div#0;n#div#1;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#header#0;n#div#0;n#div#1;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/views/site/result.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="494">
-          <caret line="130" selection-start-line="130" selection-end-line="130" />
+        <state relative-caret-position="428">
+          <caret line="52" column="26" selection-start-line="52" selection-start-column="26" selection-end-line="55" selection-end-column="34" />
+          <folding>
+            <element signature="n#style#0;n#img#0;n#a#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#header#0;n#div#0;n#div#1;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#header#0;n#div#0;n#div#1;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/img/DBS logo.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/site/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="405">
+          <caret line="49" column="35" lean-forward="true" selection-start-line="49" selection-start-column="35" selection-end-line="49" selection-end-column="35" />
+          <folding>
+            <element signature="n#style#0;n#a#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#1;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#img#0;n#a#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#1;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

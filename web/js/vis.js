@@ -169,13 +169,13 @@ function update() {
 var triples;
 var svg = d3.select("#svg-body").append("svg:svg")
     .attr("width", "100%")
-    .attr("height", "100%");
+    .attr("height", "100%")
+    .attr("style", "border: 0px;");
 var force;
 var graph;
 
 
 function redraw() {
-    console.log("here", d3.event.translate, d3.event.scale);
     svg.attr("transform",
         "translate(" + d3.event.translate + ")"
         + " scale(" + d3.event.scale + ")");
