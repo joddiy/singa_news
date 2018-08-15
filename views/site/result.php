@@ -52,7 +52,8 @@ $this->params['breadcrumbs'][] = $this->title;
 
                             <!-- logo -->
                             <div id="logo" class="logo">
-                                <a href="/"><img src="/img/DBS_Bank.svg" style="height: 35px; width: 150px" alt="The Project"></a>
+                                <a href="/"><img src="/img/DBS_Bank.svg" style="height: 35px; width: 150px"
+                                                 alt="The Project"></a>
                             </div>
 
                             <!-- name-and-slogan -->
@@ -107,8 +108,9 @@ $this->params['breadcrumbs'][] = $this->title;
                     <?php
                     foreach ($articles as $key => $cluster) {
                         echo <<<EOF
-<div id="comments" class="comments">
-    <h2 class="title"># {$key}</h2>
+<div id="comments" class="comments" style="
+    margin-top:  30px;">
+    <h2 class="title" style="margin-bottom:  20px;"># {$key}</h2>
 EOF;
                         $is_first = true;
                         foreach ($cluster as $article) {
@@ -125,14 +127,15 @@ EOF;
     </header>
 <!-- comment end -->
 EOF;
-                                if(count($cluster)>1){
+                                if (count($cluster) > 1) {
                                     echo "<br/>";
                                 }
                                 $is_first = false;
                             } else {
                                 echo <<<EOF
 <!-- comment start -->
-<div class="comment clearfix">
+<div class="comment clearfix"style="
+    margin-bottom:  20px;">
     <header>
         <a href="/site/text?n_id={$article['n_id']}"><h3>{$article['n_title']}</h3></a>
         <div class="comment-meta">By <a href="#">admin</a> | Today, {$r_time}</div>
@@ -161,14 +164,12 @@ EOF;
                             <input type="hidden" id='t_name' value="<?= $t_name ?>">
                             <input type="hidden" id='day' value="<?= $day ?>">
                             <div style="margin-bottom: 10px">
-                                <select class="form-control" id='rel' required>
-                                    <option value="">All Relation</option>
-                                    <?php
-                                    foreach ($rel as $item) {
-                                        echo "<option value='{$item}'>{$item}</option>";
-                                    }
-                                    ?>
-                                </select>
+                                <button name='rel' class="btn btn-sm twitter">all relations</button>
+                                <button name='rel' class="btn btn-sm facebook">type of</button>
+                                <button name='rel' class="btn btn-sm googleplus">related</button>
+                                <button name='rel' class="btn btn-sm vine">located</button>
+                                <button name='rel' class="btn btn-sm soundcloud">key peop</button>
+                                <button name='rel' class="btn btn-sm linkedin">label</button>
                             </div>
                             <div id="svg-body" style="width:350px; height: 566px"></div>
                         </div>

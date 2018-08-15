@@ -181,13 +181,13 @@ function redraw() {
         + " scale(" + d3.event.scale + ")");
 }
 
-function refresh_graph() {
+function refresh_graph(keyword) {
     $.ajax({
         type: 'GET',
         url: '/api/get-graph',
         data: {
             c_name: $('#c_name').val(),
-            keyword: $('select#rel').children(":selected").val(),
+            keyword: keyword,
         },
         success: function (data) {
             if (data['code'] === 200) {
@@ -205,8 +205,12 @@ function refresh_graph() {
     });
 }
 
-refresh_graph();
+refresh_graph("");
 
-$("select#rel").bind('change', function () {
-    refresh_graph();
+$("button[name='rel']").click(function () {
+    let keyword = $(this).html();
+    if (keyword == "all relations") {
+        keyword = "";
+    }
+    refresh_graph(keyword);
 });
