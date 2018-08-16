@@ -39,11 +39,30 @@ $(function () {
             },
             select: function (event, ui) {
                 this.value = ui.item.value;
+                refresh_day();
                 return false;
             },
         }).blur(function () {
-        refresh_day();
+        check_c_name();
     });
+
+    function check_c_name() {
+        $.ajax({
+            type: 'GET',
+            url: '/api/check-c-name',
+            data: {
+                c_name: $("#tags").val()
+            },
+            success: function (data) {
+                if (!(data['code'] === 200)) {
+                    if ($("#error_div").is(":hidden")) {
+                        $("#error_div").show();
+                    }
+                    $("#error_info").html(data['data']);
+                }
+            }
+        });
+    }
 
     $("select[name='t_name']").change(function () {
         refresh_day();
@@ -56,7 +75,6 @@ $(function () {
     });
 
     function refresh_day() {
-        $("#error_div").hide();
         $("select[name='day']").children('option').remove();
         $.ajax({
             type: 'GET',
@@ -67,6 +85,9 @@ $(function () {
             },
             success: function (data) {
                 if (data['code'] === 200) {
+                    if ($("#error_div").is(":visible")) {
+                        $("#error_div").hide();
+                    }
                     $.each(data['data'], function (i, item) {
                         $("select[name='day']").append($('<option>', {
                             value: item,
@@ -74,7 +95,9 @@ $(function () {
                         }));
                     });
                 } else {
-                    $("#error_div").show();
+                    if ($("#error_div").is(":hidden")) {
+                        $("#error_div").show();
+                    }
                     $("#error_info").html(data['data']);
                 }
             }

@@ -115,4 +115,22 @@ EOF;
             return $this->formatRestResult(self::FAILURE, $e->getMessage());
         }
     }
+
+
+    /**
+     * @return array
+     */
+    public function actionCheckCName()
+    {
+        try {
+            $params = Yii::$app->request->get();
+            $company = Company::findOne(['c_name' => $params['c_name']]);
+            if (empty($company)) {
+                throw new \Exception("Cannot found this company, please check.");
+            }
+            return $this->formatRestResult(self::SUCCESS, []);
+        } catch (\Exception $e) {
+            return $this->formatRestResult(self::FAILURE, $e->getMessage());
+        }
+    }
 }
