@@ -108,7 +108,7 @@ EOF;
             $params = Yii::$app->request->get();
             $day = News::getDay($params['c_name'], $params['t_name']);
             if (empty($day)) {
-                throw new \Exception("Cannot found any valid news, please check");
+                throw new \Exception("Cannot found any valid news, please check.");
             }
             return $this->formatRestResult(self::SUCCESS, $day);
         } catch (\Exception $e) {

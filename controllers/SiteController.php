@@ -85,10 +85,9 @@ class SiteController extends Controller
                 'article' => $article
             ]);
         } catch (\Exception $e) {
-            print($e->getMessage());
-//            return $this->render('text', [
-//                'error' => $e
-//            ]);
+            return $this->render('text', [
+                'error' => $e->getMessage()
+            ]);
         }
     }
 }

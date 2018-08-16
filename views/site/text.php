@@ -42,7 +42,8 @@ $this->params['breadcrumbs'][] = $this->title;
 
                             <!-- logo -->
                             <div id="logo" class="logo">
-                                <a href="/"><img src="/img/DBS_Bank.svg" style="height: 35px; width: 150px" alt="The Project"></a>
+                                <a href="/"><img src="/img/DBS_Bank.svg" style="height: 35px; width: 150px"
+                                                 alt="The Project"></a>
                             </div>
 
                             <!-- name-and-slogan -->
@@ -95,22 +96,31 @@ $this->params['breadcrumbs'][] = $this->title;
                             <!-- main start -->
                             <!-- ================ -->
                             <div class="main col-lg-12">
-                                <h1 class="title"><?= $article->n_title ?></h1>
-                                <div class="separator-2"></div>
                                 <?php
-                                $is_first = true;
-                                $handle = fopen(Yii::$app->params['base_dir'] . $article->n_path, "r");
-                                if ($handle) {
-                                    while (($line = fgets($handle)) !== false) {
-                                        if ($is_first) {
-                                            $is_first = !$is_first;
-                                            continue;
+                                if (!empty($article)) {
+                                    ?>
+                                    <h1 class="title"><?= $article->n_title ?></h1>
+                                    <div class="separator-2"></div>
+                                    <?php
+                                    $is_first = true;
+                                    $handle = fopen(Yii::$app->params['base_dir'] . $article->n_path, "r");
+                                    if ($handle) {
+                                        while (($line = fgets($handle)) !== false) {
+                                            if ($is_first) {
+                                                $is_first = !$is_first;
+                                                continue;
+                                            }
+                                            echo "<p>{$line}</p>";
                                         }
-                                        echo "<p>{$line}</p>";
-                                    }
 
-                                    fclose($handle);
+                                        fclose($handle);
+                                    }
                                 } else {
+                                    ?>
+                                    <h1 class="title">Ooops! News Not Found!</h1>
+                                    <div class="separator-2"></div>
+                                    <?php
+                                    echo "<p>Please check your request. Make sure that the request info you submitted is correct. If you have any question, please inform the admin. </p>";
                                 }
                                 ?>
                             </div>

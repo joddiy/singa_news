@@ -5,8 +5,7 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/controllers/ApiController.php" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/ApiController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/controllers/SiteController.php" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/SiteController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/site/result.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/site/result.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/js/search_autocomplete.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/js/search_autocomplete.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/site/text.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/site/text.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -23,6 +22,15 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="text.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/views/site/text.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="602">
+              <caret line="122" column="181" selection-start-line="122" selection-start-column="181" selection-end-line="122" selection-end-column="181" />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/views/site/index.php">
           <provider selected="true" editor-type-id="text-editor">
@@ -37,11 +45,23 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="search_autocomplete.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="result.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/views/site/result.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="306">
+              <caret line="116" column="158" selection-start-line="116" selection-start-column="22" selection-end-line="116" selection-end-column="158" />
+              <folding>
+                <element signature="n#style#0;n#h2#0;n#div#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="search_autocomplete.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/js/search_autocomplete.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="480">
-              <caret line="54" column="7" lean-forward="true" selection-start-line="54" selection-start-column="7" selection-end-line="54" selection-end-column="7" />
+            <state relative-caret-position="446">
+              <caret line="65" column="14" lean-forward="true" selection-start-line="65" selection-start-column="14" selection-end-line="65" selection-end-column="14" />
             </state>
           </provider>
         </entry>
@@ -67,8 +87,8 @@
       <file leaf-file-name="ApiController.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/controllers/ApiController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="626">
-              <caret line="110" column="65" selection-start-line="110" selection-start-column="65" selection-end-line="110" selection-end-column="65" />
+            <state relative-caret-position="464">
+              <caret line="101" column="7" lean-forward="true" selection-start-line="101" selection-start-column="7" selection-end-line="101" selection-end-column="7" />
             </state>
           </provider>
         </entry>
@@ -82,32 +102,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="result.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/views/site/result.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="284">
-              <caret line="177" column="45" lean-forward="true" selection-start-line="177" selection-start-column="45" selection-end-line="177" selection-end-column="45" />
-              <folding>
-                <element signature="n#style#0;n#h2#0;n#div#0;n#!!top" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SiteController.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="SiteController.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/controllers/SiteController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="481">
-              <caret line="61" column="39" selection-start-line="61" selection-start-column="30" selection-end-line="61" selection-end-column="39" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Graph.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/models/Graph.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-274">
-              <caret line="53" column="7" selection-start-line="53" selection-start-column="7" selection-end-line="53" selection-end-column="7" />
+            <state relative-caret-position="662">
+              <caret line="88" column="43" lean-forward="true" selection-start-line="88" selection-start-column="43" selection-end-line="88" selection-end-column="43" />
             </state>
           </provider>
         </entry>
@@ -179,16 +178,16 @@
         <option value="$PROJECT_DIR$/config/.gitignore" />
         <option value="$PROJECT_DIR$/config/db.php" />
         <option value="$PROJECT_DIR$/commands/HelloController.php" />
-        <option value="$PROJECT_DIR$/views/site/text.php" />
         <option value="$PROJECT_DIR$/web/js/vis.js" />
         <option value="$PROJECT_DIR$/models/Graph.php" />
         <option value="$PROJECT_DIR$/models/Cluster.php" />
         <option value="$PROJECT_DIR$/models/News.php" />
         <option value="$PROJECT_DIR$/views/site/index.php" />
-        <option value="$PROJECT_DIR$/controllers/SiteController.php" />
         <option value="$PROJECT_DIR$/views/site/result.php" />
-        <option value="$PROJECT_DIR$/controllers/ApiController.php" />
         <option value="$PROJECT_DIR$/web/js/search_autocomplete.js" />
+        <option value="$PROJECT_DIR$/controllers/ApiController.php" />
+        <option value="$PROJECT_DIR$/controllers/SiteController.php" />
+        <option value="$PROJECT_DIR$/views/site/text.php" />
       </list>
     </option>
   </component>
@@ -412,7 +411,7 @@
       <workItem from="1533892290607" duration="40745000" />
       <workItem from="1534236280631" duration="1160000" />
       <workItem from="1534254126622" duration="6745000" />
-      <workItem from="1534388894320" duration="5873000" />
+      <workItem from="1534388894320" duration="6257000" />
     </task>
     <task id="LOCAL-00001" summary="commit">
       <created>1534214761145</created>
@@ -491,11 +490,18 @@
       <option name="project" value="LOCAL" />
       <updated>1534401899020</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="commit">
+      <created>1534403062487</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1534403062487</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="57810000" />
+    <option name="totallyTimeSpent" value="58194000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1680" height="1027" extended-state="6" />
@@ -504,13 +510,13 @@
       <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49944875" visible="true" weight="0.26190478" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
+      <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
       <window_info anchor="right" id="Database" order="3" />
-      <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="7" />
+      <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="10" />
       <window_info anchor="bottom" id="Run" order="2" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Terminal" order="7" />
+      <window_info anchor="bottom" id="Terminal" order="9" />
       <window_info id="Favorites" order="2" sideWeight="0.5005513" side_tool="true" weight="0.25274727" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -725,13 +731,6 @@
     <entry file="file://$PROJECT_DIR$/web/img/logo-dbs-png-dbs-bank-logo-logotype-4519.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/views/site/text.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="828">
-          <caret line="46" selection-start-line="46" selection-end-line="46" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/models/Type.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="567">
@@ -808,34 +807,41 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/controllers/SiteController.php">
+    <entry file="file://$PROJECT_DIR$/controllers/ApiController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="481">
-          <caret line="61" column="39" selection-start-line="61" selection-start-column="30" selection-end-line="61" selection-end-column="39" />
+        <state relative-caret-position="464">
+          <caret line="101" column="7" lean-forward="true" selection-start-line="101" selection-start-column="7" selection-end-line="101" selection-end-column="7" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/controllers/ApiController.php">
+    <entry file="file://$PROJECT_DIR$/web/js/search_autocomplete.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="626">
-          <caret line="110" column="65" selection-start-line="110" selection-start-column="65" selection-end-line="110" selection-end-column="65" />
+        <state relative-caret-position="446">
+          <caret line="65" column="14" lean-forward="true" selection-start-line="65" selection-start-column="14" selection-end-line="65" selection-end-column="14" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/views/site/result.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="284">
-          <caret line="177" column="45" lean-forward="true" selection-start-line="177" selection-start-column="45" selection-end-line="177" selection-end-column="45" />
+        <state relative-caret-position="306">
+          <caret line="116" column="158" selection-start-line="116" selection-start-column="22" selection-end-line="116" selection-end-column="158" />
           <folding>
             <element signature="n#style#0;n#h2#0;n#div#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/js/search_autocomplete.js">
+    <entry file="file://$PROJECT_DIR$/views/site/text.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="480">
-          <caret line="54" column="7" lean-forward="true" selection-start-line="54" selection-start-column="7" selection-end-line="54" selection-end-column="7" />
+        <state relative-caret-position="602">
+          <caret line="122" column="181" selection-start-line="122" selection-start-column="181" selection-end-line="122" selection-end-column="181" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controllers/SiteController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="662">
+          <caret line="88" column="43" lean-forward="true" selection-start-line="88" selection-start-column="43" selection-end-line="88" selection-end-column="43" />
         </state>
       </provider>
     </entry>
