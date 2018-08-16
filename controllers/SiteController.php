@@ -38,37 +38,28 @@ class SiteController extends Controller
     }
 
     /**
-     * Displays result
-     *
-     * @return string
+     * @return string|Response
+     * @throws \yii\db\Exception
      */
     public function actionResult()
     {
-        try {
-            $c_name = $_REQUEST['c_name'];
-            $t_name = $_REQUEST['t_name'];
-            $day = $_REQUEST['day'];
-            $company = Company::findOne(['c_name' => $c_name]);
-            // if the company doesn't exist, then search it by google
-            if (empty($company)) {
-                return $this->redirect('https://www.google.com.sg/search?q=' . $c_name);
-            }
-            $articles = Cluster::getCluster($c_name, $t_name, $day);
-            $rel = Graph::getRel($c_name, "");
-            return $this->render('result', [
-                'c_name' => $c_name,
-                't_name' => $t_name,
-                'day' => $day,
-                'articles' => $articles,
-                'rel' => $rel
-            ]);
-        } catch (\Exception $e) {
-            $types = Type::getAllTypes();
-            return $this->render('index', [
-                'types' => $types
-            ]);
+        $c_name = $_REQUEST['c_name'];
+        $t_name = $_REQUEST['t_name'];
+        $day = $_REQUEST['day'];
+        $company = Company::findOne(['c_name' => $c_name]);
+        // if the company doesn't exist, then search it by google
+        if (empty($company)) {
+            return $this->redirect('https://www.google.com.sg/search?q=' . $c_name);
         }
-
+        $articles = Cluster::getCluster($c_name, $t_name, $day);
+        $rel = Graph::getRel($c_name, "");
+        return $this->render('result', [
+            'c_name' => $c_name,
+            't_name' => $t_name,
+            'day' => $day,
+            'articles' => $articles,
+            'rel' => $rel
+        ]);
     }
 
     /**

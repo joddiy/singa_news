@@ -43,13 +43,13 @@ class HelloController extends Controller
                     }
                     $str .= $line;
                     $j += 1;
-                    if ($j > 5) {
+                    if ($j > 10) {
                         break;
                     }
                 }
                 $sql = "update news set n_des = :des where n_id = :id";
                 \Yii::$app->getDb()->createCommand($sql, [
-                    ":des" => substr($str, 1, 200),
+                    ":des" => substr($str, 1, 1024),
                     ":id" => $i,
                 ])->execute();
                 fclose($handle);

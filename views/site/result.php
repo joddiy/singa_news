@@ -132,14 +132,14 @@ EOF;
                             foreach ($cluster as $article) {
                                 $r_time = date('H:i', rand(0, 3600 * 24));
                                 if ($is_first) {
-                                    $content = substr($article['n_des'], 0, 200) . " ...";
+//                                    $content = substr($article['n_des'], 0, 200) . " ...";
                                     echo <<<EOF
 <!-- comment start -->
 <div class="comment clearfix">
     <header>
         <a href="/site/text?n_id={$article['n_id']}"><h4>{$article['n_title']}</h4></a>
         <div class="comment-meta">By <a href="#">admin</a> | Today, {$r_time}</div>
-        <p>{$content}</p>
+        <p style="line-height: 1.5em; height: 3em; overflow: hidden; ">{$article['n_des']}</p>
     </header>
 <!-- comment end -->
 EOF;
