@@ -55,6 +55,7 @@ $(function () {
     });
 
     function refresh_day() {
+        $("#error_div").hide();
         $("select[name='day']").children('option').remove();
         $.ajax({
             type: 'GET',

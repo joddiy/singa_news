@@ -49,7 +49,7 @@ class SiteController extends Controller
             $t_name = $_REQUEST['t_name'];
             $day = $_REQUEST['day'];
             $company = Company::findOne(['c_name' => $c_name]);
-            // if the company doesn't exist, then search by google
+            // if the company doesn't exist, then search it by google
             if (empty($company)) {
                 return $this->redirect('https://www.google.com.sg/search?q=' . $c_name);
             }
@@ -85,10 +85,10 @@ class SiteController extends Controller
                 'article' => $article
             ]);
         } catch (\Exception $e) {
-            $types = Type::getAllTypes();
-            return $this->render('index', [
-                'types' => $types
-            ]);
+            print($e->getMessage());
+//            return $this->render('text', [
+//                'error' => $e
+//            ]);
         }
     }
 }

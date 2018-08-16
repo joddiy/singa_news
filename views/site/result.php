@@ -106,18 +106,34 @@ $this->params['breadcrumbs'][] = $this->title;
                     <h1 class="title">Cluster</h1>
                     <div class="separator-2"></div>
                     <?php
-                    foreach ($articles as $key => $cluster) {
+                    if (empty($articles)) {
                         echo <<<EOF
+<div class="row justify-content-lg-center">
+
+    <!-- main start -->
+    <!-- ================ -->
+    <div class="main col-lg-12 pv-40">
+      <h2 class="mt-4">Ooops! News Not Found</h2>
+      <p class="lead">Please check your request. Make sure that the request info you submitted is correct. If you have any question, please inform the admin. </p>
+    </div>
+    <!-- main end -->
+
+</div>
+EOF;
+
+                    } else {
+                        foreach ($articles as $key => $cluster) {
+                            echo <<<EOF
 <div id="comments" class="comments" style="
     margin-top:  30px;">
     <h2 class="title" style="margin-bottom:  20px;"># {$key}</h2>
 EOF;
-                        $is_first = true;
-                        foreach ($cluster as $article) {
-                            $r_time = date('H:i', rand(0, 3600 * 24));
-                            if ($is_first) {
-                                $content = substr($article['n_des'], 0, 200) . " ...";
-                                echo <<<EOF
+                            $is_first = true;
+                            foreach ($cluster as $article) {
+                                $r_time = date('H:i', rand(0, 3600 * 24));
+                                if ($is_first) {
+                                    $content = substr($article['n_des'], 0, 200) . " ...";
+                                    echo <<<EOF
 <!-- comment start -->
 <div class="comment clearfix">
     <header>
@@ -127,12 +143,12 @@ EOF;
     </header>
 <!-- comment end -->
 EOF;
-                                if (count($cluster) > 1) {
-                                    echo "<br/>";
-                                }
-                                $is_first = false;
-                            } else {
-                                echo <<<EOF
+                                    if (count($cluster) > 1) {
+                                        echo "<br/>";
+                                    }
+                                    $is_first = false;
+                                } else {
+                                    echo <<<EOF
 <!-- comment start -->
 <div class="comment clearfix"style="
     margin-bottom:  20px;">
@@ -143,10 +159,11 @@ EOF;
 <!-- comment end -->
 </div>
 EOF;
-                            }
+                                }
 
+                            }
+                            echo "</div></div>";
                         }
-                        echo "</div></div>";
                     }
                     ?>
 
