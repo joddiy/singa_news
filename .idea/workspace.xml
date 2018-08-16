@@ -3,10 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="f8ce1fe5-1ec4-4b1a-b7ea-acaad191a026" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controllers/ApiController.php" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/ApiController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/Cluster.php" beforeDir="false" afterPath="$PROJECT_DIR$/models/Cluster.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/Graph.php" beforeDir="false" afterPath="$PROJECT_DIR$/models/Graph.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/News.php" beforeDir="false" afterPath="$PROJECT_DIR$/models/News.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/views/site/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/site/index.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/js/search_autocomplete.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/js/search_autocomplete.js" afterDir="false" />
     </list>
@@ -28,10 +24,12 @@
       <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/views/site/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="350">
-              <caret line="66" column="57" selection-start-line="66" selection-start-column="57" selection-end-line="66" selection-end-column="57" />
+            <state relative-caret-position="646">
+              <caret line="91" column="53" selection-start-line="91" selection-start-column="53" selection-end-line="91" selection-end-column="53" />
               <folding>
                 <element signature="n#style#0;n#div#0;n#div#1;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#ul#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#1;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#p#0;n#div#1;n#div#0;n#div#0;n#ul#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#1;n#!!top" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -40,8 +38,8 @@
       <file leaf-file-name="search_autocomplete.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/web/js/search_autocomplete.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="389">
-              <caret line="51" column="28" lean-forward="true" selection-start-line="51" selection-start-column="28" selection-end-line="51" selection-end-column="28" />
+            <state relative-caret-position="473">
+              <caret line="55" column="4" selection-start-line="55" selection-start-column="4" selection-end-line="55" selection-end-column="4" />
             </state>
           </provider>
         </entry>
@@ -412,7 +410,7 @@
       <workItem from="1533892290607" duration="40745000" />
       <workItem from="1534236280631" duration="1160000" />
       <workItem from="1534254126622" duration="6745000" />
-      <workItem from="1534388894320" duration="3357000" />
+      <workItem from="1534388894320" duration="4780000" />
     </task>
     <task id="LOCAL-00001" summary="commit">
       <created>1534214761145</created>
@@ -477,11 +475,18 @@
       <option name="project" value="LOCAL" />
       <updated>1534321749169</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="commit">
+      <created>1534400347174</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1534400347174</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="55294000" />
+    <option name="totallyTimeSpent" value="56717000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1680" height="1027" extended-state="6" />
@@ -805,18 +810,20 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/views/site/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="350">
-          <caret line="66" column="57" selection-start-line="66" selection-start-column="57" selection-end-line="66" selection-end-column="57" />
+        <state relative-caret-position="646">
+          <caret line="91" column="53" selection-start-line="91" selection-start-column="53" selection-end-line="91" selection-end-column="53" />
           <folding>
             <element signature="n#style#0;n#div#0;n#div#1;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#ul#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#1;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#p#0;n#div#1;n#div#0;n#div#0;n#ul#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#1;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/web/js/search_autocomplete.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="389">
-          <caret line="51" column="28" lean-forward="true" selection-start-line="51" selection-start-column="28" selection-end-line="51" selection-end-column="28" />
+        <state relative-caret-position="473">
+          <caret line="55" column="4" selection-start-line="55" selection-start-column="4" selection-end-line="55" selection-end-column="4" />
         </state>
       </provider>
     </entry>

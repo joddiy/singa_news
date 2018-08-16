@@ -48,6 +48,11 @@ $(function () {
         refresh_day();
     });
 
+    $(window).on("load", function () {
+        if ($("#tags").val() && $("select[name='t_name']")){
+            refresh_day();
+        }
+    });
 
     function refresh_day() {
         $("select[name='day']").children('option').remove();
@@ -66,6 +71,9 @@ $(function () {
                             text: item
                         }));
                     });
+                } else {
+                    $("#error_div").show();
+                    $("#error_info").html(data['data']);
                 }
             }
         });

@@ -39,7 +39,9 @@ $this->params['breadcrumbs'][] = $this->title;
                     <div class="object-non-visible" data-animation-effect="fadeIn" data-effect-delay="100">
                         <!-- logo -->
                         <div id="logo" class="logo text-center">
-                            <a href="/" style="width: 150px; display: flex; margin: auto"><img src="/img/DBS logo.png" style="height: 50px; width: 150px" alt="The Project"></a>
+                            <a href="/" style="width: 150px; display: flex; margin: auto"><img src="/img/DBS logo.png"
+                                                                                               style="height: 50px; width: 150px"
+                                                                                               alt="The Project"></a>
                         </div>
                         <p class="small"></p>
                         <!-- name-and-slogan -->
@@ -85,6 +87,16 @@ $this->params['breadcrumbs'][] = $this->title;
                                                 <button type="submit" class="btn btn-default">Submit</button>
                                             </div>
                                         </form>
+                                    </div>
+                                    <div id="error_div" class="alert alert-danger alert-dismissible"
+                                         role="alert"
+                                         style="width: 80%; margin: auto;display: none">
+                                        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                                            <span aria-hidden="true">×</span></button>
+                                        <strong>Error!</strong>
+                                        <p id='error_info' style="display: inline"> Better check yourself, you're not
+                                            looking too
+                                            good.</p>
                                     </div>
                                     <!-- filters end -->
                                 </div>
