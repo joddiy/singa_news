@@ -30,7 +30,7 @@ class HelloController extends Controller
 
     public function actionText()
     {
-        for ($i = 1; $i <= 500; $i++) {
+        for ($i = 1; $i <= 839; $i++) {
             $handle = fopen(\Yii::$app->params['base_dir'] . $i . ".txt", "r");
             if ($handle) {
                 $j = 1;
@@ -41,18 +41,17 @@ class HelloController extends Controller
                         $is_first = !$is_first;
                         continue;
                     }
-                    $str .= " " . $line;
+                    $str .= $line;
                     $j += 1;
                     if ($j > 5) {
-                        $sql = "update news set n_des = :des where n_id = :id";
-                        \Yii::$app->getDb()->createCommand($sql, [
-                            ":des" => substr($str, 1, 500),
-                            ":id" => $i,
-                        ])->execute();
                         break;
                     }
                 }
-
+                $sql = "update news set n_des = :des where n_id = :id";
+                \Yii::$app->getDb()->createCommand($sql, [
+                    ":des" => substr($str, 1, 200),
+                    ":id" => $i,
+                ])->execute();
                 fclose($handle);
             }
         }
