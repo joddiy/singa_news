@@ -39,17 +39,18 @@ $(function () {
             },
             select: function (event, ui) {
                 this.value = ui.item.value;
-                refresh_day();
                 return false;
-            }
-        });
+            },
+        }).blur(function () {
+        refresh_day();
+    });
 
     $("select[name='t_name']").change(function () {
         refresh_day();
     });
 
     $(window).on("load", function () {
-        if ($("#tags").val() && $("select[name='t_name']")){
+        if ($("#tags").val() && $("select[name='t_name']")) {
             refresh_day();
         }
     });
