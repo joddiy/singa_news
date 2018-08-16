@@ -88,11 +88,9 @@ $this->params['breadcrumbs'][] = $this->title;
                                             </div>
                                         </form>
                                     </div>
-                                    <div id="error_div" class="alert alert-danger alert-dismissible"
+                                    <div id="error_div" class="alert alert-danger"
                                          role="alert"
                                          style="width: 80%; margin: auto;display: none">
-                                        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-                                            <span aria-hidden="true">×</span></button>
                                         <strong>Error!</strong>
                                         <p id='error_info' style="display: inline"> Better check yourself, you're not
                                             looking too
