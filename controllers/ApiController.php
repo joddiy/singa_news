@@ -19,6 +19,7 @@ use app\models\Company;
 use app\models\Graph;
 use app\models\LbArchitecture;
 use app\models\LbBem;
+use app\models\News;
 use app\models\OSISoft;
 use Yii;
 use yii\base\ErrorException;
@@ -39,9 +40,10 @@ class ApiController extends RestController
         try {
             $params = Yii::$app->request->get();
             if (empty($params['keyword'])) {
-                return $this->formatRestResult(self::SUCCESS, []);
+                $key = "%%";
+            } else {
+                $key = "%" . $params['keyword'] . "%";
             }
-            $key = "%" . $params['keyword'] . "%";
             $sql = <<<EOF
 SELECT *
 From company
@@ -58,12 +60,15 @@ EOF;
         }
     }
 
+    /**
+     * @return array
+     */
     public function actionGetGraph()
     {
         try {
             $params = Yii::$app->request->get();
             if (empty($params['c_name'])) {
-                return $this->formatRestResult(self::SUCCESS, []);
+                return $this->formatRestResult(self::FAILURE, "The company's name is invalid");
             }
             $graph = Graph::getGraph($params['c_name'], $params['keyword']);
             return $this->formatRestResult(self::SUCCESS, $graph);
@@ -72,12 +77,15 @@ EOF;
         }
     }
 
+    /**
+     * @return array
+     */
     public function actionGetRel()
     {
         try {
             $params = Yii::$app->request->get();
             if (empty($params['c_name'])) {
-                return $this->formatRestResult(self::SUCCESS, []);
+                return $this->formatRestResult(self::FAILURE, "The company's name is invalid");
             }
             if (empty($params['keyword'])) {
                 $key_word = "";
@@ -85,6 +93,20 @@ EOF;
                 $key_word = $params['keyword'];
             }
             $rel = Graph::getRel($params['c_name'], $key_word);
+            return $this->formatRestResult(self::SUCCESS, $rel);
+        } catch (\Exception $e) {
+            return $this->formatRestResult(self::FAILURE, $e->getMessage());
+        }
+    }
+
+    /**
+     * @return array
+     */
+    public function actionGetDay()
+    {
+        try {
+            $params = Yii::$app->request->get();
+            $rel = News::getDay($params['c_name'], $params['t_name']);
             return $this->formatRestResult(self::SUCCESS, $rel);
         } catch (\Exception $e) {
             return $this->formatRestResult(self::FAILURE, $e->getMessage());

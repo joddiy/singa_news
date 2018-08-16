@@ -64,7 +64,6 @@ $this->params['breadcrumbs'][] = $this->title;
                                             <div class="form-group ml-1">
                                                 <label>Type</label>
                                                 <select class="form-control" name='t_name' required>
-                                                    <option value="" disabled selected></option>
                                                     <?php
                                                     $is_first = true;
                                                     foreach ($types as $key => $name) {
@@ -79,15 +78,6 @@ $this->params['breadcrumbs'][] = $this->title;
                                                 <label>Day</label>
                                                 <select class="form-control" name='day' required>
                                                     <option value="" disabled selected></option>
-                                                    <option>1</option>
-                                                    <option>2</option>
-                                                    <option>3</option>
-                                                    <option>4</option>
-                                                    <option>5</option>
-                                                    <option>6</option>
-                                                    <option>7</option>
-                                                    <option>8</option>
-                                                    <option>9</option>
                                                 </select>
                                             </div>
 

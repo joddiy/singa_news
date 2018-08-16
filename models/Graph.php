@@ -51,14 +51,19 @@ class Graph extends \yii\db\ActiveRecord
         ];
     }
 
+    /**
+     * @param $c_name
+     * @param $key_words
+     * @return array
+     * @throws Exception
+     */
     public static function getGraph($c_name, $key_words)
     {
         $data = [];
-        try {
-            $params = [
-                ':c_name' => $c_name,
-            ];
-            $sql = <<<EOF
+        $params = [
+            ':c_name' => $c_name,
+        ];
+        $sql = <<<EOF
 select
   b.c_name as subject,
   a.predicate,
@@ -66,40 +71,39 @@ select
 from graph a left join company b on a.c_id = b.c_id
 where b.c_name = :c_name
 EOF;
-            if (!empty($key_words)) {
-                $sql .= " and a.predicate = :predicate";
-                $params[':predicate'] = $key_words;
-            }
-            $ret = Yii::$app->getDb()->createCommand($sql, $params)->queryAll();
+        if (!empty($key_words)) {
+            $sql .= " and a.predicate = :predicate";
+            $params[':predicate'] = $key_words;
+        }
+        $ret = Yii::$app->getDb()->createCommand($sql, $params)->queryAll();
 
-            foreach ($ret as $item) {
-                $data[] = $item;
-            }
-        } catch (Exception $e) {
+        foreach ($ret as $item) {
+            $data[] = $item;
         }
         return $data;
     }
 
+    /**
+     * @param $c_name
+     * @param $key_words
+     * @return array
+     * @throws Exception
+     */
     public static function getRel($c_name, $key_words)
     {
         $data = [];
-        try {
-
-            $sql = <<<EOF
+        $sql = <<<EOF
 select
   distinct a.predicate
 from graph a left join company b on a.c_id = b.c_id
 where b.c_name = :c_name and a.predicate like :key_word
 EOF;
-            $ret = Yii::$app->getDb()->createCommand($sql, [
-                ':c_name' => $c_name,
-                ':key_word' => "%" . $key_words . "%"
-            ])->queryAll();
-
-            foreach ($ret as $item) {
-                $data[] = $item['predicate'];
-            }
-        } catch (Exception $e) {
+        $ret = Yii::$app->getDb()->createCommand($sql, [
+            ':c_name' => $c_name,
+            ':key_word' => "%" . $key_words . "%"
+        ])->queryAll();
+        foreach ($ret as $item) {
+            $data[] = $item['predicate'];
         }
         return $data;
     }

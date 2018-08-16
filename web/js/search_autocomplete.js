@@ -39,9 +39,35 @@ $(function () {
             },
             select: function (event, ui) {
                 this.value = ui.item.value;
-                // window.location.href = "/site/main?c_id="+cache[ui.item.value];
+                refresh_day();
                 return false;
             }
         });
 
+    $("select[name='t_name']").change(function () {
+        refresh_day();
+    });
+
+
+    function refresh_day() {
+        $("select[name='day']").children('option').remove();
+        $.ajax({
+            type: 'GET',
+            url: '/api/get-day',
+            data: {
+                c_name: $("#tags").val(),
+                t_name: $("select[name='t_name']").val()
+            },
+            success: function (data) {
+                if (data['code'] === 200) {
+                    $.each(data['data'], function (i, item) {
+                        $("select[name='day']").append($('<option>', {
+                            value: item,
+                            text: item
+                        }));
+                    });
+                }
+            }
+        });
+    }
 });

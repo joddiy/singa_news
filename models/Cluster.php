@@ -51,11 +51,17 @@ class Cluster extends \yii\db\ActiveRecord
         ];
     }
 
+    /**
+     * @param $c_name
+     * @param $t_name
+     * @param $day
+     * @return array
+     * @throws Exception
+     */
     public static function getCluster($c_name, $t_name, $day)
     {
-        try {
-            $data = [];
-            $sql = <<<EOF
+        $data = [];
+        $sql = <<<EOF
 select
   a.`group`,
   c.n_title,
@@ -69,20 +75,18 @@ where b.c_name = :c_name and d.t_name = :t_name
       and c.n_day = :n_day
 order by a.`group`, c.n_id
 EOF;
-            $ret = Yii::$app->getDb()->createCommand($sql, [
-                ':c_name' => $c_name,
-                ':t_name' => $t_name,
-                ':n_day' => $day
-            ])->queryAll();
-            foreach ($ret as $item) {
-                if (empty($data[$item['group']])) {
-                    $data[$item['group']] = [];
-                }
-                $data[$item['group']][] = $item;
+        $ret = Yii::$app->getDb()->createCommand($sql, [
+            ':c_name' => $c_name,
+            ':t_name' => $t_name,
+            ':n_day' => $day
+        ])->queryAll();
+        foreach ($ret as $item) {
+            if (empty($data[$item['group']])) {
+                $data[$item['group']] = [];
             }
-            return $data;
-        } catch (Exception $e) {
-            throw new \Exception("Cannot find any the articles");
+            $data[$item['group']][] = $item;
         }
+        return $data;
+
     }
 }
