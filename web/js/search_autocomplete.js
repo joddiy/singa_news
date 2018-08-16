@@ -54,7 +54,11 @@ $(function () {
                 c_name: $("#tags").val()
             },
             success: function (data) {
-                if (!(data['code'] === 200)) {
+                if (data['code'] === 200) {
+                    if ($("#error_div").is(":visible")) {
+                        $("#error_div").hide();
+                    }
+                } else {
                     if ($("#error_div").is(":hidden")) {
                         $("#error_div").show();
                     }
