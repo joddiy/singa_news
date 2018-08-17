@@ -5,7 +5,7 @@ $db = require __DIR__ . '/db.php';
 
 $config = [
     'id' => 'basic',
-    'name' => 'SDE4 Research',
+    'name' => 'DBS News',
     'basePath' => dirname(__DIR__),
     'bootstrap' => ['log'],
     'aliases' => [

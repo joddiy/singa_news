@@ -17,7 +17,7 @@ $(function () {
                 var list = [];
                 $.ajax({
                     type: 'GET',
-                    url: '/api/get-rel',
+                    url: '/news/api/get-rel',
                     data: {
                         keyword: request.term,
                         c_name: $('#c_name').val()

@@ -7,7 +7,7 @@
 use app\assets\AppAsset;
 use yii\web\View;
 
-AppAsset::addScript($this, "/project/plugins/jquery.min.js", ["position" => View::POS_HEAD]);
+AppAsset::addScript($this, "/news/project/plugins/jquery.min.js", ["position" => View::POS_HEAD]);
 AppAsset::register($this);
 
 

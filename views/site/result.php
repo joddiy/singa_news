@@ -14,8 +14,8 @@ use app\assets\AppAsset;
 
 
 AppAsset::addScript($this, "http://d3js.org/d3.v3.min.js");
-AppAsset::addScript($this, "/js/vis.js");
-AppAsset::addCss($this, "/css/vis.css");
+AppAsset::addScript($this, "/news/js/vis.js");
+AppAsset::addCss($this, "/news/css/vis.css");
 AppAsset::register($this);
 
 
@@ -52,7 +52,7 @@ $this->params['breadcrumbs'][] = $this->title;
 
                             <!-- logo -->
                             <div id="logo" class="logo">
-                                <a href="/"><img src="/img/DBS_Bank.svg" style="height: 35px; width: 150px"
+                                <a href="/news"><img src="/news/img/DBS_Bank.svg" style="height: 35px; width: 150px"
                                                  alt="The Project"></a>
                             </div>
 
@@ -87,7 +87,7 @@ $this->params['breadcrumbs'][] = $this->title;
     <div class="breadcrumb-container">
         <div class="container">
             <ol class="breadcrumb">
-                <li class="breadcrumb-item"><i class="fa fa-home pr-2"></i><a href="/">Home</a></li>
+                <li class="breadcrumb-item"><i class="fa fa-home pr-2"></i><a href="/news">Home</a></li>
                 <li class="breadcrumb-item active">Result: [<?php echo $c_name . " , " . $t_name . " , " . $day ?>]
                 </li>
             </ol>
@@ -137,7 +137,7 @@ EOF;
 <!-- comment start -->
 <div class="comment clearfix">
     <header>
-        <a href="/site/text?n_id={$article['n_id']}"><h4>{$article['n_title']}</h4></a>
+        <a href="/news/site/text?n_id={$article['n_id']}"><h4>{$article['n_title']}</h4></a>
         <div class="comment-meta">By <a href="#">admin</a> | Today, {$r_time}</div>
         <p style="line-height: 1.5em; height: 3em; overflow: hidden; ">{$article['n_des']}</p>
     </header>
@@ -153,7 +153,7 @@ EOF;
 <div class="comment clearfix"style="
     margin-bottom:  20px;">
     <header>
-        <a href="/site/text?n_id={$article['n_id']}"><h4>{$article['n_title']}</h4></a>
+        <a href="/news/site/text?n_id={$article['n_id']}"><h4>{$article['n_title']}</h4></a>
         <div class="comment-meta">By <a href="#">admin</a> | Today, {$r_time}</div>
     </header>
 <!-- comment end -->
