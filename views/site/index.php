@@ -6,8 +6,8 @@
 
 use app\assets\AppAsset;
 
-AppAsset::addScript($this, '/news/js/jquery-ui.js');
-AppAsset::addScript($this, '/news/js/search_autocomplete.js');
+AppAsset::addScript($this, '/soc/js/jquery-ui.js');
+AppAsset::addScript($this, '/soc/js/search_autocomplete.js');
 AppAsset::register($this);
 
 
@@ -15,7 +15,7 @@ $this->title = 'News Article Clustering';
 $this->params['breadcrumbs'][] = $this->title;
 
 ?>
-<link rel="stylesheet" href="/news/css/jquery-ui.css">
+<link rel="stylesheet" href="/soc/css/jquery-ui.css">
 
 <!-- scrollToTop -->
 <!-- ================ -->
@@ -26,7 +26,7 @@ $this->params['breadcrumbs'][] = $this->title;
 <div class="page-wrapper">
     <!-- background image -->
     <div class="fullscreen-bg"
-         style="background: url('/news/img/dbs-bb.jpg');
+         style="background: url('/soc/img/dbs-bb.jpg');
          background-repeat:no-repeat;
          background-size:100% 100%;"></div>
 
@@ -39,7 +39,7 @@ $this->params['breadcrumbs'][] = $this->title;
                     <div class="object-non-visible" data-animation-effect="fadeIn" data-effect-delay="100">
                         <!-- logo -->
                         <div id="logo" class="logo text-center">
-                            <a href="/news" style="width: 150px; display: flex; margin: auto"><img src="/news/img/DBS logo.png"
+                            <a href="/soc" style="width: 150px; display: flex; margin: auto"><img src="/soc/img/DBS logo.png"
                                                                                                style="height: 50px; width: 150px"
                                                                                                alt="The Project"></a>
                         </div>
@@ -54,7 +54,7 @@ $this->params['breadcrumbs'][] = $this->title;
                                 <div class="container-fluid">
                                     <!-- filters start -->
                                     <div class="sorting-filters text-center mb-20 d-flex justify-content-center">
-                                        <form class="form-inline" action="/news/site/result" id="submit-form" role="form"
+                                        <form class="form-inline" action="/soc/site/result" id="submit-form" role="form"
                                               method="post">
                                             <input type="hidden" id='_csrf' name='_csrf'
                                                    value="<?= Yii::$app->request->csrfToken ?>">

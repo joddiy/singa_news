@@ -17,7 +17,7 @@ $(function () {
                 var list = [];
                 $.ajax({
                     type: 'GET',
-                    url: '/news/api/get-companies',
+                    url: '/soc/api/get-companies',
                     data: {keyword: request.term},
                     success: function (data) {
                         cache = [];
@@ -49,7 +49,7 @@ $(function () {
     function check_c_name() {
         $.ajax({
             type: 'GET',
-            url: '/news/api/check-c-name',
+            url: '/soc/api/check-c-name',
             data: {
                 c_name: $("#tags").val()
             },
@@ -82,7 +82,7 @@ $(function () {
         $("select[name='day']").children('option').remove();
         $.ajax({
             type: 'GET',
-            url: '/news/api/get-day',
+            url: '/soc/api/get-day',
             data: {
                 c_name: $("#tags").val(),
                 t_name: $("select[name='t_name']").val()

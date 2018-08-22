@@ -42,7 +42,7 @@ $this->params['breadcrumbs'][] = $this->title;
 
                             <!-- logo -->
                             <div id="logo" class="logo">
-                                <a href="/news"><img src="/news/img/DBS_Bank.svg" style="height: 35px; width: 150px"
+                                <a href="/soc"><img src="/soc/img/DBS_Bank.svg" style="height: 35px; width: 150px"
                                                  alt="The Project"></a>
                             </div>
 
@@ -77,7 +77,7 @@ $this->params['breadcrumbs'][] = $this->title;
     <div class="breadcrumb-container">
         <div class="container">
             <ol class="breadcrumb">
-                <li class="breadcrumb-item"><i class="fa fa-home pr-2"></i><a href="/news">Home</a></li>
+                <li class="breadcrumb-item"><i class="fa fa-home pr-2"></i><a href="/soc">Home</a></li>
                 <li class="breadcrumb-item active">Article</li>
             </ol>
         </div>

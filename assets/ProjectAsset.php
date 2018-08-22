@@ -18,11 +18,11 @@ class ProjectAsset extends AssetBundle
 {
 
     public $js = [
-        '/news/project/plugins/popper.min.js',
-        '/news/project/bootstrap/js/bootstrap.min.js',
-        '/news/project/plugins/modernizr.js',
+        '/soc/project/plugins/popper.min.js',
+        '/soc/project/bootstrap/js/bootstrap.min.js',
+        '/soc/project/plugins/modernizr.js',
 //        '/project/plugins/magnific-popup/jquery.magnific-popup.min.js',
-        '/news/project/plugins/waypoints/jquery.waypoints.min.js',
+        '/soc/project/plugins/waypoints/jquery.waypoints.min.js',
 //        '/project/plugins/waypoints/sticky.min.js',
 //        '/project/plugins/jquery.countTo.js',
 //        '/project/plugins/jquery.parallax-1.1.3.js',
@@ -31,9 +31,9 @@ class ProjectAsset extends AssetBundle
 //        '/project/plugins/jquery.countdown/js/jquery.plugin.js',
 //        '/project/plugins/jquery.countdown/js/jquery.countdown.js',
 //        '/project/js/coming.soon.config.js',
-        '/news/project/js/template.js',
-        '/news/project/js/custom.js',
-        '/news/js/common.js'
+        '/soc/project/js/template.js',
+        '/soc/project/js/custom.js',
+        '/soc/js/common.js'
     ];
 
     public $css = [
@@ -41,18 +41,18 @@ class ProjectAsset extends AssetBundle
         'http://fonts.googleapis.com/css?family=Raleway:700,400,300',
         'http://fonts.googleapis.com/css?family=Pacifico',
         'http://fonts.googleapis.com/css?family=PT+Serif',
-        '/news/project/bootstrap/css/bootstrap.css',
-        '/news/project/fonts/font-awesome/css/font-awesome.css',
-        '/news/project/fonts/fontello/css/fontello.css',
+        '/soc/project/bootstrap/css/bootstrap.css',
+        '/soc/project/fonts/font-awesome/css/font-awesome.css',
+        '/soc/project/fonts/fontello/css/fontello.css',
 //        '/project/plugins/magnific-popup/magnific-popup.css',
-        '/news/project/css/animations.css',
+        '/soc/project/css/animations.css',
 //        '/project/plugins/owlcarousel2/assets/owl.carousel.min.css',
 //        '/project/plugins/owlcarousel2/assets/owl.theme.default.min.css',
 //        '/project/plugins/hover/hover-min.css',
 //        '/project/plugins/jquery.countdown/css/jquery.countdown.css',
-        '/news/project/css/style.css',
-        '/news/project/css/typography-default.css',
-        '/news/project/css/skins/light_blue.css',
+        '/soc/project/css/style.css',
+        '/soc/project/css/typography-default.css',
+        '/soc/project/css/skins/light_blue.css',
 //        '/project/css/custom.css',
     ];
 

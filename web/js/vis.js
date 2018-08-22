@@ -145,7 +145,7 @@ function update() {
     function dblclick(d) {
         let t_name = $('#t_name').val();
         let day = $('#day').val();
-        window.location = "/news/site/result?c_name=" + d.label + "&t_name=" + t_name + "&day=" + day;
+        window.location = "/soc/site/result?c_name=" + d.label + "&t_name=" + t_name + "&day=" + day;
         // window.location.replace();
         // d3.select(this).classed("fixed", d.fixed = false);
     }
@@ -184,7 +184,7 @@ function redraw() {
 function refresh_graph(keyword) {
     $.ajax({
         type: 'GET',
-        url: '/news/api/get-graph',
+        url: '/soc/api/get-graph',
         data: {
             c_name: $('#c_name').val(),
             keyword: keyword,
