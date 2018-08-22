@@ -6,8 +6,8 @@
 
 use app\assets\AppAsset;
 
-AppAsset::addScript($this, '/soc/js/jquery-ui.js');
-AppAsset::addScript($this, '/soc/js/search_autocomplete.js');
+//AppAsset::addScript($this, '/soc/js/jquery-ui.js');
+//AppAsset::addScript($this, '/soc/js/search_autocomplete.js');
 AppAsset::register($this);
 
 

@@ -31,9 +31,9 @@ class SiteController extends Controller
      */
     public function actionIndex()
     {
-        $types = Type::getAllTypes();
+//        $types = Type::getAllTypes();
         return $this->render('index', [
-            'types' => $types
+            'types' => []
         ]);
     }
 
