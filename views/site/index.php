@@ -39,7 +39,7 @@ $this->params['breadcrumbs'][] = $this->title;
                     <div class="object-non-visible" data-animation-effect="fadeIn" data-effect-delay="100">
                         <!-- logo -->
                         <div id="logo" class="logo text-center">
-                            <h3 class="margin-clear"><a href="/" class="logo-font link-light"><span
+                            <h3 class="margin-clear"><a href="/soc" class="logo-font link-light"><span
                                             class="text-default">SoC</span></a></h3>
                         </div>
                         <p class="small"></p>

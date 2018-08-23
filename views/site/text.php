@@ -41,9 +41,9 @@ $this->params['breadcrumbs'][] = $this->title;
                         <div class="header-first clearfix">
 
                             <!-- logo -->
-                            <div id="logo" class="logo">
-                                <a href="/soc"><img src="/soc/img/NUS-SOC-Logo-1.png" style="height: 35px; width: 150px"
-                                                 alt="The Project"></a>
+                            <div id="logo" class="logo d-flex justify-content-center justify-content-md-start">
+                                <h3 class="margin-clear"><a href="/soc" class="logo-font link-light"><span
+                                                class="text-default">SoC</span></a></h3>
                             </div>
 
                             <!-- name-and-slogan -->
