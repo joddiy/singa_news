@@ -47,7 +47,7 @@ $this->params['breadcrumbs'][] = $this->title;
                             </div>
 
                             <!-- name-and-slogan -->
-                            <div style="padding-left: 20px" class="site-slogan text-center-xs">
+                            <div class="site-slogan text-center-xs">
                                 News Article Clustering
                             </div>
 
