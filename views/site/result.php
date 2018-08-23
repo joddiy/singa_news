@@ -52,7 +52,7 @@ $this->params['breadcrumbs'][] = $this->title;
 
                             <!-- logo -->
                             <div id="logo" class="logo">
-                                <a href="/soc"><img src="/soc/img/soc_logo.jpg" style="height: 35px; width: 150px"
+                                <a href="/soc"><img src="/soc/img/NUS-SOC-Logo-1.png" style="height: 35px; width: 150px"
                                                  alt="The Project"></a>
                             </div>
 

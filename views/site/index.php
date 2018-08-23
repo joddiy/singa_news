@@ -39,7 +39,7 @@ $this->params['breadcrumbs'][] = $this->title;
                     <div class="object-non-visible" data-animation-effect="fadeIn" data-effect-delay="100">
                         <!-- logo -->
                         <div id="logo" class="logo text-center">
-                            <a href="/soc" style="width: 150px; display: flex; margin: auto"><img src="/soc/img/soc_logo.jpg"
+                            <a href="/soc" style="width: 150px; display: flex; margin: auto"><img src="/soc/img/NUS-SOC-Logo-1.png"
                                                                                                style="height: 50px; width: 150px"
                                                                                                alt="The Project"></a>
                         </div>
