@@ -26,7 +26,7 @@ $this->params['breadcrumbs'][] = $this->title;
 <div class="page-wrapper">
     <!-- background image -->
     <div class="fullscreen-bg"
-         style="background: url('/soc/img/dbs-bb.jpg');
+         style="background: url('/soc/img/NUS_School_of_Computing.jpg');
          background-repeat:no-repeat;
          background-size:100% 100%;"></div>
 
@@ -39,7 +39,7 @@ $this->params['breadcrumbs'][] = $this->title;
                     <div class="object-non-visible" data-animation-effect="fadeIn" data-effect-delay="100">
                         <!-- logo -->
                         <div id="logo" class="logo text-center">
-                            <a href="/soc" style="width: 150px; display: flex; margin: auto"><img src="/soc/img/DBS logo.png"
+                            <a href="/soc" style="width: 150px; display: flex; margin: auto"><img src="/soc/img/Co-Brand-SoC-H.png"
                                                                                                style="height: 50px; width: 150px"
                                                                                                alt="The Project"></a>
                         </div>
