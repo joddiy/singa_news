@@ -53,7 +53,7 @@ $this->params['breadcrumbs'][] = $this->title;
                             <!-- logo -->
                             <div id="logo" class="logo">
                                 <a href="/news"><img src="/news/img/DBS_Bank.svg" style="height: 35px; width: 150px"
-                                                 alt="The Project"></a>
+                                                     alt="The Project"></a>
                             </div>
 
                             <!-- name-and-slogan -->
@@ -132,13 +132,24 @@ EOF;
                             foreach ($cluster as $article) {
                                 $r_time = date('H:i', rand(0, 3600 * 24));
                                 if ($is_first) {
-//                                    $content = substr($article['n_des'], 0, 200) . " ...";
+                                    $tag = "";
+                                    if (!empty($article['tag_text'])) {
+                                        $tag = "<span class=\"comments\"><i class=\"icon-tags\"></i> {$article['tag_text']}</span>";
+                                    }
                                     echo <<<EOF
 <!-- comment start -->
 <div class="comment clearfix">
     <header>
         <a href="/news/site/text?n_id={$article['n_id']}"><h4>{$article['n_title']}</h4></a>
-        <div class="comment-meta">By <a href="#">admin</a> | Today, {$r_time}</div>
+        <div class="post-info  comment-meta">
+            <span class="post-date mr-sm-2">
+                          <i class="icon-calendar"></i>
+                          <span class="month">Today, </span>
+                          <span class="day">{$r_time}</span>
+            </span>
+            <span class="submitted mr-sm-2"><i class="icon-user-1"></i> by <a href="#">admin</a></span>
+            {$tag}
+        </div>
         <p style="line-height: 1.5em; height: 3em; overflow: hidden; ">{$article['n_des']}</p>
     </header>
 <!-- comment end -->
