@@ -132,13 +132,24 @@ EOF;
                             foreach ($cluster as $article) {
                                 $r_time = date('H:i', rand(0, 3600 * 24));
                                 if ($is_first) {
-//                                    $content = substr($article['n_des'], 0, 200) . " ...";
+                                    $tag = "";
+                                    if (!empty($article['tag_text'])) {
+                                        $tag = "<span class=\"comments\"><i class=\"icon-tags\"></i> {$article['tag_text']}</span>";
+                                    }
                                     echo <<<EOF
 <!-- comment start -->
 <div class="comment clearfix">
     <header>
         <a href="/soc/site/text?n_id={$article['n_id']}"><h4>{$article['n_title']}</h4></a>
-        <div class="comment-meta">By <a href="#">admin</a> | Today, {$r_time}</div>
+        <div class="post-info  comment-meta">
+            <span class="post-date mr-sm-2">
+                          <i class="icon-calendar"></i>
+                          <span class="month">Today, </span>
+                          <span class="day">{$r_time}</span>
+            </span>
+            <span class="submitted mr-sm-2"><i class="icon-user-1"></i> by <a href="#">admin</a></span>
+            {$tag}
+        </div>
         <p style="line-height: 1.5em; height: 3em; overflow: hidden; ">{$article['n_des']}</p>
     </header>
 <!-- comment end -->
@@ -154,7 +165,15 @@ EOF;
     margin-bottom:  20px;">
     <header>
         <a href="/soc/site/text?n_id={$article['n_id']}"><h4>{$article['n_title']}</h4></a>
-        <div class="comment-meta">By <a href="#">admin</a> | Today, {$r_time}</div>
+        <div class="post-info  comment-meta">
+            <span class="post-date mr-sm-2">
+                          <i class="icon-calendar"></i>
+                          <span class="month">Today, </span>
+                          <span class="day">{$r_time}</span>
+            </span>
+            <span class="submitted mr-sm-2"><i class="icon-user-1"></i> by <a href="#">admin</a></span>
+            {$tag}
+        </div>
     </header>
 <!-- comment end -->
 </div>

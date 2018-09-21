@@ -66,11 +66,13 @@ select
   a.`group`,
   c.n_title,
   c.n_id,
-  c.n_des
+  c.n_des,
+  e.tag_text
 from cluster a 
   left join company b on a.c_id = b.c_id
   left join news c on a.n_id = c.n_id
   left join type d on a.t_id = d.t_id
+  left join new_tags e on c.n_tag = e.tag_id
 where b.c_name = :c_name and d.t_name = :t_name
       and c.n_day = :n_day
 order by a.`group`, c.n_id
