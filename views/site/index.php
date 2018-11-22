@@ -39,9 +39,10 @@ $this->params['breadcrumbs'][] = $this->title;
                     <div class="object-non-visible" data-animation-effect="fadeIn" data-effect-delay="100">
                         <!-- logo -->
                         <div id="logo" class="logo text-center">
-                            <a href="/news" style="width: 150px; display: flex; margin: auto"><img src="/news/img/DBS logo.png"
-                                                                                               style="height: 50px; width: 150px"
-                                                                                               alt="The Project"></a>
+                            <a href="/news" style="width: 150px; display: flex; margin: auto"><img
+                                        src="/news/img/DBS logo.png"
+                                        style="height: 50px; width: 150px"
+                                        alt="The Project"></a>
                         </div>
                         <p class="small"></p>
                         <!-- name-and-slogan -->
@@ -54,7 +55,8 @@ $this->params['breadcrumbs'][] = $this->title;
                                 <div class="container-fluid">
                                     <!-- filters start -->
                                     <div class="sorting-filters text-center mb-20 d-flex justify-content-center">
-                                        <form class="form-inline" action="/news/site/result" id="submit-form" role="form"
+                                        <form class="form-inline" action="/news/site/result" id="submit-form"
+                                              role="form"
                                               method="post">
                                             <input type="hidden" id='_csrf' name='_csrf'
                                                    value="<?= Yii::$app->request->csrfToken ?>">
@@ -69,7 +71,11 @@ $this->params['breadcrumbs'][] = $this->title;
                                                     <?php
                                                     $is_first = true;
                                                     foreach ($types as $key => $name) {
-                                                        echo("<option>");
+                                                        if ($name === 'Algorithm') {
+                                                            echo("<option selected>");
+                                                        } else {
+                                                            echo("<option>");
+                                                        }
                                                         echo($name);
                                                         echo("</option>");
                                                     }
@@ -93,8 +99,7 @@ $this->params['breadcrumbs'][] = $this->title;
                                          style="width: 80%; margin: auto;display: none">
                                         <strong>Error!</strong>
                                         <p id='error_info' style="display: inline"> Better check yourself, you're not
-                                            looking too
-                                            good.</p>
+                                            looking too good.</p>
                                     </div>
                                     <!-- filters end -->
                                 </div>
