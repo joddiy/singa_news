@@ -68,7 +68,11 @@ $this->params['breadcrumbs'][] = $this->title;
                                                     <?php
                                                     $is_first = true;
                                                     foreach ($types as $key => $name) {
-                                                        echo("<option>");
+                                                        if ($name === 'Algorithm') {
+                                                            echo("<option selected>");
+                                                        } else {
+                                                            echo("<option>");
+                                                        }
                                                         echo($name);
                                                         echo("</option>");
                                                     }
