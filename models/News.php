@@ -64,7 +64,7 @@ select distinct d.n_day
 from cluster a left join company b on a.c_id = b.c_id
   left join type c on a.t_id = c.t_id
   left join news d on a.n_id = d.n_id
-where b.c_name = :c_name and t_name = :t_type
+where b.c_name = :c_name and t_name = :t_type and d.n_id is not null
 order by d.n_day
 EOF;
         $ret = Yii::$app->getDb()->createCommand($sql, [
